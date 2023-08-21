@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/valor_numerico"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="Valor Númerico"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+
+    android:id="@+id/opcoes_calcular"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraitTop_toBottomOf="@id/valor_numerico"
+    app:layout_constraintStart_toStartOf="parent"
+    android:orientation="vertical"
+        android:checkedButton="@id/kg_lbs">
+
+        <RadioButton
+            android:id="@+id/kg_lbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="30dp"
+            android:text="Converter kg -> lbs" />
+
+        <RadioButton
+            android:id="@+id/lbs_kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Converter lbs -> kg" />
+
+        <Button
+            android:id="@+id/botao_calcular"
+            :="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:text="Converter" />
+
+        <TextView
+            android:id="@+id/resultado_calculo"
+            android:layout_width="347dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="208dp"
+            android:text="Valor Convertido" />
+
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
